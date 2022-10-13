@@ -11,7 +11,7 @@ ssh ssun20@hopper-amd.orc.gmu.edu
 transfer files:
 
 ```
-ssh ssun20@hopper-amd.orc.gmu.edu
+scp [file] ssun20@hopper-amd.orc.gmu.edu:[location] // under scratch folder
 ```
 
 request a worker node
