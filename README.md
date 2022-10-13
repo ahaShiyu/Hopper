@@ -24,7 +24,27 @@ gpu:
 
 ```
 salloc -p gpuq -q gpu --gres=gpu:A100.40gb:1 -n 1  --mem=15G -t 0-12:00:00
-
 ```
+
 #### Step 0.1: download and install anaconda
 
+```
+cd /scratch/ssun20
+```
+```
+wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
+```
+```
+sh Anaconda3-2022.05-Linux-x86_64.sh
+```
+```
+source /anaconda3/etc/profile.d/conda.sh
+```
+
+#### step 1: create virtual environment and install packages
+```
+conda create -n myenv python=3.9
+```
+```
+conda activate /scratch/ssun20/myenv
+```
